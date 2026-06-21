@@ -7,7 +7,7 @@ java.nio.file.Path path = Paths.get(System.getProperty("user.dir"), "src/main/ja
 Charset charset = StandardCharsets.UTF_8;
 
 String content = new String(Files.readAllBytes(path), charset);
-content = content.replaceAll("\\)\", ", "); required-after:trackapi@[1.1,)\", ");
+content = content.replaceAll("\\)\", ", "); required-after:trackapi@[1.2,)\", ");
 Files.write(path, content.getBytes(charset));
 
 path = Paths.get(System.getProperty("user.dir"), "src/main/resources/META-INF/mods.toml");
