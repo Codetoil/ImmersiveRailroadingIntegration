@@ -6,7 +6,6 @@ repositories {
 	maven {	url = "https://maven.blamejared.com/" }
 	maven { url = "https://cursemaven.com" }
     maven { url = "https://teamopenindustry.cc/maven" }
-	mavenLocal()
 }
 
 sourceSets {
@@ -18,5 +17,5 @@ sourceSets {
 }
 
 dependencies {
-	modImplementation "trackapi:TrackAPI:1.21.1-forge-1.2"
+	modImplementation "trackapi:TrackAPI:1.21.1-forge-1.3"
 }
