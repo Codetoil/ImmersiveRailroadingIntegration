@@ -7,10 +7,10 @@ java.nio.file.Path path = Paths.get(System.getProperty("user.dir"), "src/main/ja
 Charset charset = StandardCharsets.UTF_8;
 
 String content = new String(Files.readAllBytes(path), charset);
-content = content.replaceAll("\\)\", ", "); required-after:trackapi@[1.2,)\", ");
+content = content.replaceAll("\\)\", ", "); required-after:trackapi@[1.3,)\", ");
 Files.write(path, content.getBytes(charset));
 
 path = Paths.get(System.getProperty("user.dir"), "src/main/resources/META-INF/mods.toml");
 content = new String(Files.readAllBytes(path), charset);
-content += "\n[[dependencies.trackapi]]\nmodId=\"trackapi\"\nmandatory=true\nversionRange=\"[1.2,)\"\nordering=\"AFTER\"\nside=\"BOTH\"";
+content += "\n[[dependencies.trackapi]]\nmodId=\"trackapi\"\nmandatory=true\nversionRange=\"[1.3,)\"\nordering=\"AFTER\"\nside=\"BOTH\"";
 Files.write(path, content.getBytes(charset));
